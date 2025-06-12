@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  margin: 0; padding: 20px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 8px 12px;
+  border: 2px solid #3b4cca;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  border-color: #ffcb05;
+  outline: none;
+}
+
+button {
+  padding: 9px 20px;
+  background: #3b4cca;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #2c357b;
+}
+
+#pokemon-info {
+  margin-top: 30px;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(59,76,202,0.15);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+#pokemon-info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3b4cca;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#pokemon-info h2 {
+  font-size: 1.2rem;
+  margin: 6px 0;
+  text-transform: capitalize;
+}
+
+#sprite {
+  margin-top: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: contain;
+  border: 3px solid #ffcb05;
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  input[type="text"] {
+    width: 90vw;
+  }
+  #sprite {
+    width: 140px;
+    height: 140px;
+  }
+}
+
